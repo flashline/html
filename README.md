@@ -6,6 +6,7 @@ Dependency : Skins (skin.html with css) used apix.ui and apix.uix
 
 - Example : [Apix-MyBox](https://github.com/flashline/Apix-MyBox)
 
-
+##Install 
+has to be installed in exe root folder
 
 ##Licence  GNU-GPL
