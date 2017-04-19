@@ -1,0 +1,107 @@
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- Even if images urls look like stupid, leave ././ even if you must change by a relative url -->
+<!-- or replace by the real runtime absolute url  -->
+<!-- @see: apix.ui.UICompo.hx  -->
+<!-- ---  --> 
+<!-- TO REMOVE AFTER SKIN TESTS -->
+	<!--	
+<link href="../../css/custom.foundation.css" rel="stylesheet" />
+<link href="../../css/custom.normalize.css" rel="stylesheet" /> 	
+<link href="../../css/common.css" rel="stylesheet" type="text/css"/>	 
+	 -->
+<!-- ---  -->
+<!-- ---  -->
+<style>
+	
+	.apixLogger_default .signFrame {
+		position:relative;
+		max-width:500px;
+		width:90%;
+		padding:.5rem;
+		padding-top:1rem;
+		margin-left:auto;
+		margin-right:auto;
+		background-color:#eee;	
+		border-radius: 10px;
+		box-shadow: 4px 4px 8px #aaa ;	
+		font-size:.85rem;
+	}
+	
+	.apixLogger_default .signFrame .signLabel {
+		font-size:1.2rem;
+		text-align:center;
+		padding-bottom:1.5rem;
+		
+	}
+	.apixLogger_default .oneRow span  {
+		width:40%;
+		text-align:right;
+		display:inline-block;
+	}
+	.apixLogger_default .oneRow input  {
+		width:58%;
+		text-align:left;	
+		display:inline-block;
+	}
+	.apixLogger_default .buttonRow  {
+		padding-top:.5rem;
+		padding-bottom:1rem;
+	}
+	.apixLogger_default .buttonRow .buttonAlign {
+		margin-left:6.3rem;	
+	}
+	.apixLogger_default .buttonRow .signBack {
+		background-color:#ddd;	
+	}
+	.apixLogger_default .msgFrame {
+		color:red;
+		padding:1rem;
+	}
+</style>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- you can change contents, names and folder locations -->
+<!--   -> 	except the name of this file skin.html  -->
+<!-- 		div.apix_loader_ctnr is a tmp container, used for download or test only ; don't remove it -->
+<!-- 		names begining by apix_ are NOT editable, have behaviour meaning 		; don't remove it -->
+<!-- 		in this skin the name attributes are NOT editable -->
+<!-- ---  -->
+<!-- ---  -->
+<div class="apix_loader_ctnr" style="margin:10;width:1000px;">	
+	<div class="apixLogger_default">
+		<div class="apix_signIn signFrame">					
+			<div class="oneRow  signLabel" ><span class="apix_label">Untitled signin</span></div>
+			<div class="oneRow"><span class="">Email : </span><input type="text" name="userId" /></div>
+			<div class="oneRow"><span class="">Mot de passe : </span><input type="password" name="pwd" /></div>
+			<div class="oneRow buttonRow">
+				<button class="apix_goSignUp signBack tiny secondary" >s'inscrire</button>
+				<button class="apix_cancel buttonAlign" >Abandonner</button>
+				<button class="apix_enter"  >Valider</button>		
+			</div>
+		</div>
+		<br/>
+		<div class="apix_signUp signFrame">					
+			<div class="oneRow signLabel"><span class="apix_label">Untitled signup</span></div>
+			<div class="oneRow"><span class="">Raison sociale : </span><input type="text" name="company" value="" /></div>
+			<div class="oneRow"><span class="">Email : </span><input type="text" name="userId" value="" /></div>
+			<div class="oneRow"><span class="">Mot de passe : </span><input type="password" name="pwd" value="" /></div>
+			<div class="oneRow"><span class="">Ressaisir le mot de passe : </span><input type="password" name="pwdConfirm" value=""/></div>
+			<div class="oneRow buttonRow">
+				<button   class="apix_goSignIn signBack tiny secondary" >s'identifier</button>
+				<button   class="apix_cancel buttonAlign" >Abandonner</button>
+				<button  class="apix_enter"  >Valider</button>	
+			</div>
+		</div>
+		<br/>
+		<div class="apix_message signFrame msgFrame">			
+			Error message Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+						
+		</div>
+	</div>
+</div>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->

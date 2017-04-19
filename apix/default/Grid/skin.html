@@ -1,0 +1,77 @@
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- InputField default skin-->
+<!-- Even if images urls look like stupid, leave ././ even if you must change by a relative url -->
+<!-- or replace by the real runtime absolute url  -->
+<!-- @see: apix.ui.UICompo.hx  -->
+<!-- ---  --> 
+<!-- ---  -->
+<!-- ---  -->
+<style>
+	.apixGrid_default .fields input {		
+	}
+	.apixGrid_default .frame {
+		margin:10;
+		margin-left:0px;
+		margin-right:0px;		
+		border:1px dashed #ddd;	
+	}
+	.apixGrid_default .butdiv {
+		text-align:right;
+	}
+	.apixGrid_default .butdiv button {
+		margin:0;
+		margin-left:.3rem;
+		margin-right:.3rem;
+		margin-top:.2rem;
+		margin-bottom:.5rem;
+		
+		padding:.4rem;
+	}
+	.apixGrid_default .validButDiv {
+		text-align:center;
+	}
+	.apixGrid_default input  {
+		margin-bottom:.2rem;
+		
+	}
+	
+	
+</style>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- you can change contents, names and folder locations -->
+<!--   -> 	except the name of this file skin.html  -->
+<!-- 		div.apix_loader_ctnr is a tmp container, used for download or test only ; don't remove it -->
+<!-- 		names begining by apix_ are NOT editable and have behaviour meaning 	; don't remove it -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<div class="apix_loader_ctnr" style="margin:10;width:480px;">	
+	<fieldset class="apixGrid_default">
+		<legend>Grid container</legend>
+		<div class="butdiv">
+			<button type="button" class="apix_append small" >+ Ajoute</button>
+		</div>	
+		<div class="apix_itemCtnr">	<!-- used in js  -->		
+			<!-- one item  -->
+			<div class="apix_item frame"> <!-- used in js  -->
+				<div class="apix_fieldCtnr fields"><!-- used in js  -->
+					<!-- fields are added here -->
+				</div>
+				<div class="apix_buttonsCtnr butdiv">
+					<button type="button" class="apix_up small secondary" >Haut</button>
+					<button type="button" class="apix_down small secondary">Bas</button>
+					<button type="button" class="apix_remove small alert">x supprime</button>
+					<button type="button" class="apix_append small">+ Ajoute</button>
+				</div>	
+			</div>
+			<!-- /one item  -->	
+		</div>
+		<div class="validButDiv"><button type="button" class="apix_valid small success" >Valider le tableau</button></div>
+		<div class="demo"></div>
+	</fieldset>
+</div>
+

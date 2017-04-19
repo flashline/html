@@ -1,0 +1,110 @@
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- Node container default skin-->
+<!-- Even if images urls look like stupid, leave ././ even if you must change by a relative url -->
+<!-- or replace by the real runtime absolute url  -->
+<!-- @see: apix.ui.UICompo.hx  -->
+<!-- ---  --> 
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<style>			  
+	.apixTreeNode_default {	
+		position:relative;width:100%;height:auto;
+	}
+	.apixTreeNode_default span {
+		margin:0;padding;0;
+		display:inline-block;
+		position:relative;
+	}
+	.apixTreeNode_default .nodeHead {	
+		width:100%;height:2rem;
+		border-left:3px solid rgba(0,0,0,0.0);
+		
+	}
+	.apixTreeNode_default .nodeHead:hover {	
+		border-left:3px solid #9c9;
+		background-color:#efe;
+		cursor:pointer;
+	}
+	
+	.apixTreeNode_default .nodeHead .side {	
+		position:absolute;
+		left:-1.5px;
+		width:3px;
+		height:2rem;
+		background-color:#f00;
+		display:none;
+	}
+	
+	/**/
+	.apixTreeNode_default .nodeHead .shift {	
+		width:1rem;
+	}
+	.apixTreeNode_default .nodeHead .bOpenClose {	
+		width:30px;
+		height:2rem;
+	}
+	.apixTreeNode_default .nodeHead .arrow {
+		width:1px;
+		height:1px;
+		border:1px solid ;
+		border-color:transparent  transparent transparent #555;
+		border-width:1rem;
+		margin-left:10px;
+	}
+	.apixTreeNode_default .nodeHead .imgCtnr {
+		width:30px;height:2rem;
+		position:relative;
+		top:-.3rem;
+	}
+	.apixTreeNode_default .nodeHead .labelCtnr {
+		height:2rem;
+		max-width:50%;
+		top:.5rem;
+		left:1rem;
+		overflow:hidden;
+	}
+	
+	.apixTreeNode_default .nodeHead .openImg , .apixTreeNode_default .nodeHead .emptyImg   {
+		display:none;
+	}
+	.apixTreeNode_default .nodeBody    {
+		display:none;
+		top:2em;
+		width:100%;
+		height:auto;
+	}
+</style>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- you can change contents, names and folder locations -->
+<!--   -> 	except the name of this file skin.html  -->
+<!-- 		div.apix_loader_ctnr is a tmp container, used for download or test only ; don't remove it -->
+<!-- 		names begining by apix_ are NOT editable, have behaviour meaning 		; don't remove it -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<div class="apix_loader_ctnr" style="width:1200px;" >	
+	<div class="apixTreeNode_default"  >
+		<div class="apix_head nodeHead"  >	
+			<span class="apix_bar side" ></span>
+			<span class="apix_shift shift"></span><!-- this tag width will be replaced  -->
+			<span class="apix_button bOpenClose" ><span class="apix_arrow arrow"></span></span>
+			<!-- img style.display are set to "inline-block" by default js code   -->
+			<!-- to force that: add  style="display:inline; or block"  into the "apix_close" tag here -not in <style></style> -->
+			<span class="imgCtnr" ><img class="apix_open openImg" src="././open.png"/><img class="apix_close closeImg" src="././close.png"/><img class="apix_empty emptyImg" src="././empty.png"/></span>
+			<span class="labelCtnr" ><span class="apix_label">Will be replaced Will be replaced Will be replaced</span></span>				
+		</div>
+		<div class="apix_body nodeBody"  >	
+			inner will be replaced by other nodes or ...
+		</div>		
+	</div>
+</div>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+

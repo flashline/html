@@ -1,0 +1,152 @@
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- TabBox default skin-->
+<!-- Even if images urls look like stupid, leave ././ even if you must change by a relative url -->
+<!-- or replace by the real runtime absolute url  -->
+<!-- @see: apix.ui.UICompo.hx  -->
+<!-- ---  --> 
+
+<!-- ---  -->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+<!--  <link href="../../css/custom.foundation.css" rel="stylesheet" />
+		<link href="../../css/custom.normalize.css" rel="stylesheet" /> 	
+			<link href="../../css/common.css" rel="stylesheet" type="text/css"/>	 
+			-->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+<!-- TO REMOVE AFTER SKIN TESTS -->
+
+
+
+<style>
+	.apixTabBox_default{	
+		width:600px; /* rewrited by js */
+		height:800px; /* rewrited by js */
+		position:relative;
+		overflow:hidden;
+	}
+	.apixTabBox_default .tabBoxHead {	
+		position:relative;		
+		width:100%;
+		background-color:#adf;
+		padding-top:.3rem;
+		padding-left:.8rem;
+		z-index:2;
+	}
+	.apixTabBox_default .tabButton  {
+		position:relative;
+		margin-left:.3rem;;
+		display:inline-block;
+		height:27px;
+		width:30%;		
+		font-size:.75rem;
+	}
+	.apixTabBox_default .buttonInner  {	
+		position:absolute;		
+		display:block;
+	}
+	.apixTabBox_default .buttonBack  {	
+		width:100%;
+		height:28px; /*31px*/
+		border-top-left-radius: 9px 9px;
+		border-top-right-radius: 9px 9px;
+		border-left:solid 1px #adf;
+		border-top:solid 1px #adf;
+		border-right:solid 1px #adf;
+		background-color:#eff;
+	}
+	.apixTabBox_default .buttonClick  {	
+		width:100%;
+		height:28px;
+		background-color:transparent;
+	}
+	.apixTabBox_default .buttonLabel  {	
+		left:2rem;
+		top:.3rem;
+		
+	}
+	.apixTabBox_default .buttonArrow {
+		left:15px;
+		top:.5rem;
+		width:1px;
+		height:1px;
+		border:1px solid;		
+		border-width:8px;		
+	}	
+	.apixTabBox_default .arrowDown {	
+		border-color:  #8bf  transparent  transparent  transparent  ;
+		left:10px;
+		top:.7rem;
+	}	
+	.apixTabBox_default .arrowRight {			
+		border-color:   transparent  transparent  transparent #8bf  ;	
+		left:15px;
+		top:.35rem;
+		display:none;
+	}	
+	
+	
+	.apixTabBox_default .tabBoxBody {	
+		font-size: .75rem;
+		position:relative;		
+		width:100%;
+		background-color:#eff;
+		height:85%;
+		overflow:hidden;
+		padding:.5rem;
+		border:solid 1px #adf;
+		z-index:1;
+	}
+	.apixTabBox_default .tabBoxBody .tabContent {	
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+		position:absolute;	
+		left:0px;
+		top:0px;
+		width:100%;
+	}
+	.apixTabBox_default .tabBoxFoot {	
+		position:relative;		
+		width:100%;
+		text-align:center;
+		background-color:#dee;
+		height:15%;
+		overflow:hidden;
+		padding:.5rem;
+	}
+	
+	
+</style>
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- you can change contents, names and folder locations -->
+<!--   -> 	except the name of this file skin.html  -->
+<!-- 		div.apix_loader_ctnr is a tmp container, used for download or test only ; don't remove it -->
+<!-- 		names begining by apix_ are NOT editable and have behaviour meaning in js code	; don't change them -->
+<!-- ---  -->
+<!-- ---  -->
+<!-- ---  -->
+<div class="apix_loader_ctnr" style="">	
+	<div class="apixTabBox_default">
+		<div class="apix_headCtnr tabBoxHead">
+			<span class="apix_head tabButton" >				
+				<span class="apix_buttonBack buttonInner buttonBack"></span>
+				<span class="apix_arrowOpen buttonInner buttonArrow arrowDown"></span>
+				<span class="apix_arrowClose buttonInner buttonArrow arrowRight"></span>
+				<span class="apix_label buttonInner buttonLabel">tmp label 1</span>	
+				<span class="apix_button buttonInner buttonClick" ></span>
+			</span>
+		</div>
+		<div class="apix_bodyCtnr tabBoxBody">
+			<div class="apix_body tabContent"><h2>tmp content</h2></div>			
+		</div>
+		<div class="apix_footCtnr tabBoxFoot">
+			
+		</div>
+	</div>
+</div>
+
